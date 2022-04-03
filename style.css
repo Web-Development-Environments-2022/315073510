@@ -1,8 +1,79 @@
 #menu
 {
-	position: fixed;
+
+	position: sticky;
+	top: 0;
 	width: 100%;
-	height: 35px;
+	height: 50px;
 	background: white;
 	display: flex;
+	justify-content: start;
+	align-items: center;
+	background-color: #247881;
+	z-index: 100;
+	
+} 
+
+#menu-content{
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+	align-items: center;
+}
+#logo{
+	width: 30%;
+	font-family:'Brush Script MT'  ;
+	color: white;
+	font-size: 40px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.menu-item{
+	position: relative;
+
+	padding-right: 5px;
+	margin-left: 5px;
+	text-decoration: none;
+	color: white;
+	font-family:sans-serif;
+}
+.menu-seperator{
+	color:#43919B
+}
+.line-txt{
+	display: inline;
+}
+.container{
+
+	width: 100%; 
+	margin-top: 50px;
+	
+
+}
+.title{
+	
+	color:#247881;
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 40px; 
+	border-bottom: 1px solid #247881; 
+	 padding: 0 10px;
+}
+.main-img-div{
+	display: flex;
+	justify-content: center;
+	opacity: 70%;
+}
+.content-text{
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.ul-img{
+
+}
+.li-img{
+	width: 30%;
+	height: 30%;
 }

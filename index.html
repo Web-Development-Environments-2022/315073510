@@ -4,58 +4,60 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  aaaa
+
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  <span id="logo">Benny & Malka</span>
+  <div id="menu-content">
+  <a class="menu-item" href="#about">About Me</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#photos">My Photos</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#playlist">My Playlist</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#like">Like</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#qrcoder">QR code</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#spa">Q&A</a>
+  <span class="menu-seperator">|</span>
+  <a class="menu-item" href="#contact">Contact Me</a>
+  </div>
 </div>
-		  
+<div class="main-img-div">
+  <img  src="assets/wedding.jpg" height="80%" width="80%">
+</div>	  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+
+<div class="container" >
+  <div class="title" >
+    About me
+  </div>
+  <ul class="content-text">
+   <li> Best grandparents award winners</li>
+   <li>First place at Kimi-kiducha making contest</li>
+   
+  </ul>
+</div>
+
+
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
+
+<div class="container" >
+  <div class="title" >
+    My photos
+  </div>
+  <div class="ul-img">
+    <img class="li-img" src="assets/food.jpg" alt="">
+    <img class="li-img" src="assets/ido.jpg" alt="">
+    <img class="li-img" src="assets/music.jpg" alt="">
+  </div>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -78,7 +80,15 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+<div class="container" >
+  <span class="title" >
+    My playlist
+  </span>
+  <div class="content-text" >
+    
+  </div>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -101,7 +111,12 @@ my playlist
 <br/>
 <br/>
 <br/>
-give me a like
+<div class="container" >
+  <span class="title" >
+    Give me a like
+  </span>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -124,7 +139,12 @@ give me a like
 <br/>
 <br/>
 <br/>
-scan my code
+<div class="container" >
+  <span class="title" >
+    Scan my code
+  </span>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -147,7 +167,11 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<div class="container" >
+  <span class="title" >
+    Q&A
+  </span>
+</div>
 <br/>
 <br/>
 <br/>
@@ -170,13 +194,18 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<div class="container" >
+  <span class="title" >
+    Contact me
+  </span>
+</div>
+
 <br/>
 <br/>
 <br/>
 </section>
 
-
+<!-- 
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -189,6 +218,6 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
- </script>
+ </script> -->
 </body>
 </html>
