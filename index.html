@@ -2,11 +2,16 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Your Website Title" />
+<meta property="og:description"   content="Your description" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 </head>
 <body>
 
 <div id="menu">
-  <span id="logo">Benny & Malka</span>
+  <span id="logo">Malka</span>
   <div id="menu-content">
   <a class="menu-item" href="#about">About Me</a>
   <span class="menu-seperator">|</span>
@@ -24,7 +29,7 @@
   </div>
 </div>
 <div class="main-img-div">
-  <div class="main-title">Benny And Malka</div>
+  <div class="main-title">Malka</div>
   <img  src="assets/wedding.jpg" height="70%" width="70%">
 </div>	  
 <section id="about" class="section">
@@ -35,7 +40,9 @@
     About me
   </div>
   <ul class="content-text">
-   <li> Best grandparents award winners</li>
+    
+   <li> Best grandma award winner</li>
+   <li>Master chef</li>
    <li>First place at Kimi-kiducha making contest</li>
    
   </ul>
@@ -67,9 +74,7 @@
     My playlist
   </div>
   <div class="centered-div">
-    <audio controls>
-      <source src="assets/greek.mp3" type="audio/mpeg">
-    </audio>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-5MjTB03S7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="content-text" >
     
@@ -83,13 +88,11 @@
   <div class="title" >
     Give me a like
   </div>
+  <div id="fb-root"></div>
   <div class="centered-div">
-  <div class="like ">
-  <img height="100%" width="100%" src="assets/thumbs-up.png" alt="">
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=278102178903508&autoLogAppEvents=1" nonce="8jhf2BxX"></script>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 </div>
-</div>
-</div>
-
 </section>
 
 <section id="qrcoder" class="section">
@@ -112,8 +115,26 @@
     Q&A
   </div>
   <div class="qa content-text">
-  <span>Q : How do they look?</span>
-  <span>A : Million Dollar</span>
+  <ol>
+    <li>
+      <br>
+      <ul>
+        <li>Web1 is static-no option for user input,not like web 2 or 3</li>
+        <li>web 3 has machine learning teniques embeded,unlike web 1 and 2</li>
+        <li>web 3 enable user customized experiance due to user data being monitored,stored and used</li>
+      </ul>
+    </li>
+    <li>
+      <br>
+      For example,web search of drugs side affects will return:
+      <br>
+      <ul>
+        <li>Web1 : static pages containing information</li>
+        <li>Web2 : forums,blogs and wiki pages</li>
+        <li>Web3 : video streaming,sotial network pages etc.</li>
+      </ul>
+    </li>
+  </ol>
 </div>
 </div>
 
@@ -125,12 +146,12 @@
   <div class="title" >
     Contact me
   </div>
-  <div class=" content-text">HarelMx@gmail.com</div>
+  <a class=" content-text" href="mailto:HarelMx@gmail.com">Contact Me</a>
 </div>
 
 </section>
 
-<!-- 
+
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -143,6 +164,6 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
- </script> -->
+ </script>
 </body>
 </html>

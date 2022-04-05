@@ -21,12 +21,12 @@
 	align-items: center;
 }
 #logo{
-	width: 30%;
+	width: 20%;
 	font-family:'Brush Script MT'  ;
 	color: white;
 	font-size: 40px;
 	margin-right: 10px;
-	margin-left: 5px;
+	margin-left: 15px;
 }
 .menu-item{
 	position: relative;
@@ -63,7 +63,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	opacity: 70%;
+	opacity: 90%;
 }
 .content-text{
 	margin-top: 10px;
@@ -97,7 +97,8 @@
 	flex-direction: column;
 }
 .main-title{
-	font-family:'Times New Roman', Times, serif;
+	font-family:'Brush Script MT' ;
 	text-align: center;
 	font-size: 100px;
+	margin-left: 100px;
 }
