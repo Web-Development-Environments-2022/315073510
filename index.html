@@ -2,11 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
-<meta property="og:type"          content="website" />
-<meta property="og:title"         content="Your Website Title" />
-<meta property="og:description"   content="Your description" />
-<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 </head>
 <body>
 
@@ -146,7 +141,21 @@
   <div class="title" >
     Contact me
   </div>
-  <a class=" content-text" href="mailto:HarelMx@gmail.com">Contact Me</a>
+  <div class="centered-div">
+  <form  method="post" enctype="text/plain" action="mailto:harelmx@gmail.com" style="display: flex;flex-direction: column;width: 310px;">
+
+    <input type="text" name="mail" placeholder="your Email here" required><br>
+    <textarea id="" style="width: 300px; height: 200px;" name="message" placeholder="write yout message here" required></textarea>
+   
+
+    <br>
+    
+    <input type="submit">
+    
+    
+    </form>
+  </div>
+    
 </div>
 
 </section>
@@ -164,6 +173,9 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
+
+
+
  </script>
 </body>
 </html>
