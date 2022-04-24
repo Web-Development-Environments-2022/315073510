@@ -2,8 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js" integrity="sha512-aGWPnmdBhJ0leVHhQaRASgb0InV/Z2BWsscdj1Vwt29Oic91wECPixuXsWESpFfCcYPLfOlBZzN2nqQdMxlGTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.css">
 
 <div id="menu">
   <span id="logo">Malka</span>
@@ -142,10 +146,10 @@
     Contact me
   </div>
   <div class="centered-div">
-  <form  method="post" enctype="text/plain" action="mailto:harelmx@gmail.com" style="display: flex;flex-direction: column;width: 310px;">
+  <form  method="post"action="https://formspree.io/f/xjvlpkgw" style="display: flex;flex-direction: column;width: 310px;">
 
-    <input type="text" name="mail" placeholder="your Email here" required><br>
-    <textarea id="" style="width: 300px; height: 200px;" name="message" placeholder="write yout message here" required></textarea>
+    <input type="text" name="email"  placeholder="your Email here" required><br>
+    <textarea id="area" name="area" style="width: 300px; height: 200px;"  placeholder="write yout message here" required></textarea>
    
 
     <br>
@@ -158,10 +162,11 @@
     
 </div>
 
+
 </section>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
     e.preventDefault();
@@ -173,9 +178,11 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
-
-
-
+ </script> -->
+ <script>
+   $('#area').emojioneArea({
+     pickerPosition:'top'
+   })
  </script>
 </body>
 </html>
